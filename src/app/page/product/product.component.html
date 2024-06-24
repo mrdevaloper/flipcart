@@ -1,0 +1,22 @@
+<br><br>
+<div class="row mt-5 md-5">
+  @for (item of products; track item.id) {
+
+  <div class="col">
+    <div class="grid gap-3">
+      <div class="p-2 g-col-6">
+      <div class="card" style="width: 22rem;">
+          <img src="{{item.image}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.description}}</p>
+            <p class="card-text">price {{item.price}} $</p>
+            <a routerLink="{{item.id}}" class="btn btn-primary">buy</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  }
+</div>
+
